@@ -1,0 +1,14 @@
+---
+
+src_registry:
+  repo_key: "registry-remote-docker-aquasec"
+  url: "https://registry.hub.docker.com"
+  username: "bacachp"
+  password: ""
+  whitelist: "aquasec/**"
+
+dest_registry: "{{ container_registry_eng }}"
+
+image_list:
+  - src: "aquasec/cybercenter-standard:latest"
+    dest: "aqua/cybercenter-standard:latest"
